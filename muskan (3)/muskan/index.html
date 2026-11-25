@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg ">
+  <div class="container-fluid" id="suru">
+    <a class="navbar-brand " id="log" href="#"><img src="logo.png" alt="logo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link " href="About.html">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="Cakes.html">Cakes</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="Testimonials.html">Testimonials</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                </ul>
+        
+    
+<div class="position-relative d-inline-block">
+
+    <button class="btn border-0"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#cartPage">
+
+        <span id="cartTotal" class="fs-5 text-primary">
+            $0.00
+        </span>
+
+        <i class="bi bi-basket fs-3 text-primary ms-3"></i>
+
+    </button>
+
+    <span id="cartCount" class="position-absolute top-0 end-0
+                 translate-middle badge rounded-pill bg-primary">
+        0
+    </span>
+
+</div>
+    </div>
+  </div>
+</nav>
+<div id="cartPage" class="offcanvas offcanvas-end">
+
+    <div class="offcanvas-header border-bottom">
+
+        <h4 class="offcanvas-title">
+            Shopping Cart
+        </h4>
+
+        <button type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas">
+        </button>
+
+    </div>
+
+
+    <div class="offcanvas-body p-0">
+
+        <!-- Cart Products -->
+        <div id="cartItems" class="p-4">
+            
+            <p>Your cart is empty</p>
+
+        </div>
+
+
+        <!-- Bottom -->
+        <div class="border-top p-4">
+
+            <div class="d-flex justify-content-between">
+
+                <h5>Subtotal:</h5>
+
+                <h5 id="cartSubtotal">
+                    $0.00
+                </h5>
+
+            </div>
+
+
+              <button
+    class="btn btn-outline-primary w-100 py-3 mt-3"
+    onclick="window.location.href='cart.html'">
+
+    View cart
+
+</button>
+
+<button class="btn btn-outline-primary w-100 py-3 mt-3" onclick="goToCheckout()">
+    Checkout
+</button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- Cakes, Pies & Tarts Section -->
+<section class="cake-section">
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- LEFT SIDE - FIXED -->
+            <div class="col-md-8">
+
+                <h1 class="cake-heading">
+                    Cakes, Pies
+                    <br>
+                    & Tarts
+                </h1>
+
+            </div>
+
+
+            <!-- RIGHT SIDE - FIXED -->
+            <div class="col-md-4 text-center">
+
+                <div class="testimonial">
+
+                   <img src="signature-free-img.png" alt="logo">
+
+                    <p>
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                        Ut elit tellus, luctus nec
+                        ullamcorper mattis, pulvinar
+                        dapibus leo.
+                    </p>
+
+                    <h5>Susan Lee</h5>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ONLY IMAGE SLIDER -->
+        <div id="cakeImageSlider"
+             class="carousel slide"
+             data-bs-ride="carousel">
+
+            <div class="carousel-inner">
+
+                <!-- IMAGE 1 -->
+                <div class="carousel-item active">
+
+                    <img src="product-01-free-img.png"
+                         class="cake-slide-img"
+                         alt="Tart">
+
+                </div>
+
+
+                <!-- IMAGE 2 -->
+                <div class="carousel-item">
+
+                    <img src="product-02-free-img.png"
+                         class="cake-slide-img"
+                         alt="Cake">
+
+                </div>
+
+
+                <!-- IMAGE 3 -->
+                <div class="carousel-item">
+
+                    <img src="product-03-free-img.png"
+                         class="cake-slide-img"
+                         alt="Pie">
+
+                </div>
+
+            </div>
+
+
+            <!-- PREVIOUS -->
+            <button class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#cakeImageSlider"
+                    data-bs-slide="prev">
+
+                <span class="carousel-control-prev-icon"></span>
+
+            </button>
+
+
+            <!-- NEXT -->
+            <button class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#cakeImageSlider"
+                    data-bs-slide="next">
+
+                <span class="carousel-control-next-icon"></span>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+<section id="about" class="about-section">
+
+    <!-- Left Image -->
+    <div class="about-image">
+        <img src="bg-02-free-img.jpg" alt="Cherries">
+    </div>
+
+    <!-- Right Content -->
+    <div class="about-content">
+
+        <h1>Welcome!</h1>
+
+        <div class="about-text">
+
+            <h2>Cakes with Love</h2>
+
+            <h4>
+                Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco.
+            </h4>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore<br>
+                 et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut<br>
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse<br>
+                   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa<br> qui officia deserunt mollit anim id est laborum.
+                </p>
+
+            <a href="#cakes" class="read-more">
+                Read More
+            </a>
+
+        </div>
+ 
+
+    </div>
+
+</section>
+<!-- OUR CAKES SECTION -->
+<section class="our-cakes">
+
+    <div class="container">
+
+        <h1>Our Cakes</h1>
+
+        <p>Cakes with Love</p>
+
+        <!-- Products JSON se yaha aayenge -->
+        <div class="row" id="cakeList">
+
+        </div>
+
+    </div>
+
+</section>
+<!-- TESTIMONIAL SECTION -->
+<section class="testimonial-single-section">
+    <div class="container text-center">
+
+        <img src="testimonial-08-free-img.jpg" alt="Maria Harris" class="testimonial-avatar">
+
+        <h4 class="testimonial-name">Maria Harris</h4>
+
+        <div class="quote-icon">&#8221;</div>
+
+        <p class="testimonial-quote">
+            "I just wanted to say thank you for our lorem it looked and tasted amazing
+            consectetur adipiscing elit. Ut elit tellus, everyone loved the theme."
+        </p>
+
+    </div>
+</section>
+
+<!-- FOOTER SECTION -->
+<footer class="footer-section">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <!-- LEFT SIDE -->
+            <div class="col-md-6">
+                <div class="footer-logo">
+                    <span class="footer-logo-main">Cake<em>Shop</em></span>
+                    <br>
+                    <small>DELICIOUS CAKES</small>
+                </div>
+
+                <h2 class="footer-heading">Something Sweet for Everyone.</h2>
+
+                <p class="footer-text">
+                    Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+                    bibendum auctor, nisi elit consequat ipsum.
+                </p>
+            </div>
+
+            <!-- RIGHT SIDE -->
+            <div class="col-md-6 text-md-end">
+
+                <h1 class="footer-phone">987 654 3210</h1>
+
+                <p class="footer-contact">
+                    order@example.com
+                    <br>
+                    13 Fifth Avenue, New York, NY 10160
+                </p>
+
+                <div class="footer-socials">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-youtube"></i></a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<script src="code.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
