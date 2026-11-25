@@ -1,0 +1,1810 @@
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    background-color: #eef2fc;
+    margin: 0;
+    border: none;
+    padding: 8px 20px;
+}
+
+#suru {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #eef2fc;
+    min-height: 75px;
+    margin: 0;
+    width: 100%;
+}
+
+
+/* =========================
+   LOGO - LEFT SIDE
+========================= */
+
+#log {
+    order: 1;
+    margin: 0;
+    padding: 0;
+}
+
+#log img {
+    width: 180px;
+    height: auto;
+    display: block;
+}
+
+
+/* =========================
+   MENU - RIGHT SIDE
+========================= */
+
+#navbarSupportedContent {
+    order: 2;
+    width: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    margin-left: auto;
+}
+
+#navbarSupportedContent .navbar-nav {
+    margin: 0 !important;
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 12px;
+}
+
+#navbarSupportedContent .nav-link {
+    font-size: 15px;
+    color: #555;
+    white-space: nowrap;
+}
+
+
+/* =========================
+   CART
+========================= */
+
+#navbarSupportedContent > .position-relative {
+    position: relative !important;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+#navbarSupportedContent > .position-relative .btn {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+#cartTotal {
+    font-size: 14px !important;
+}
+
+#navbarSupportedContent .bi-basket {
+    font-size: 20px !important;
+    margin-left: 5px !important;
+}
+
+#navbarSupportedContent > .position-relative #cartCount {
+    position: absolute !important;
+
+    top: -7px !important;
+    right: 0 !important;
+
+    transform: translate(0, 0) !important;
+
+    font-size: 9px;
+    padding: 3px 5px;
+}
+
+/* =========================
+   MOBILE NAVBAR
+========================= */
+
+@media (max-width: 991px) {
+
+    #suru {
+        flex-direction: row;
+        min-height: auto;
+    }
+
+    #log {
+        order: 1;
+        margin: 0;
+    }
+
+    #log img {
+        width: 180px;
+    }
+
+    #navbarSupportedContent {
+        order: 2;
+        margin-left: auto;
+    }
+
+    #navbarSupportedContent .navbar-nav {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+
+/* ========================= 
+   HERO / CAKE SECTION 
+========================= */
+
+/* =========================
+   HERO / CAKE SECTION
+========================= */
+
+.cake-section {
+    background-color: #eef2fc;
+    min-height: 600px;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+}
+
+
+/* =========================
+   HEADING - LEFT SIDE
+========================= */
+
+.cake-section .row > .col-md-8 {
+    position: absolute !important;
+
+    left: 50px !important;
+    right: auto !important;
+    top: 90px !important;
+
+    width: 28% !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    z-index: 10;
+}
+
+.cake-heading {
+    font-family: Georgia, serif;
+
+    font-size: 58px !important;
+    line-height: 0.95;
+
+    color: #000;
+
+    margin: 0 !important;
+    padding: 0;
+
+    text-align: left;
+}
+
+
+/* =========================
+   SLIDER - CENTER
+========================= */
+
+#cakeImageSlider {
+    position: absolute !important;
+
+    width: 520px !important;
+    max-width: 520px !important;
+
+    left: 50% !important;
+    top: 35px !important;
+
+    transform: translateX(-50%) !important;
+
+    margin: 0 !important;
+
+    z-index: 5;
+}
+
+.cake-slide-img {
+    width: 100%;
+    height: 500px;
+
+    object-fit: contain;
+}
+
+
+/* =========================
+   SIGNATURE + TEXT - RIGHT
+========================= */
+
+.cake-section .row > .col-md-4 {
+    position: absolute !important;
+
+    right: 45px !important;
+    left: auto !important;
+
+    top: 180px !important;
+
+    width: 28% !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    z-index: 10;
+}
+
+.testimonial {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.testimonial img {
+    width: 70px;
+    height: auto;
+
+    margin-bottom: 15px;
+}
+
+.testimonial p {
+    font-size: 12px;
+    line-height: 1.6;
+
+    color: #555;
+
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.testimonial h5 {
+    font-family: Georgia, serif;
+
+    font-size: 15px;
+
+    margin-top: 12px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .cake-section {
+        min-height: 850px;
+    }
+
+    .cake-section .row > .col-md-8 {
+        position: relative !important;
+
+        left: auto !important;
+        top: auto !important;
+
+        width: 100% !important;
+
+        text-align: center;
+    }
+
+    .cake-heading {
+        font-size: 42px !important;
+        text-align: center;
+    }
+
+    #cakeImageSlider {
+        position: relative !important;
+
+        width: 100% !important;
+        max-width: 100% !important;
+
+        left: auto !important;
+        top: auto !important;
+
+        transform: none !important;
+
+        margin: 20px auto !important;
+    }
+
+    .cake-slide-img {
+        height: 380px;
+    }
+
+    .cake-section .row > .col-md-4 {
+        position: relative !important;
+
+        right: auto !important;
+        top: auto !important;
+
+        width: 100% !important;
+    }
+}
+
+
+/* =========================
+   ABOUT / MARBLE SECTION
+========================= */
+
+.about-section {
+    position: relative;
+
+    min-height: 900px;
+
+    background-image: url("bg-03-free-img.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    overflow: visible;
+    z-index: 1;
+}
+
+
+/* LEFT IMAGE */
+
+.about-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 60%;
+    height: 500px;
+
+    z-index: 2;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: left center;
+
+    display: block;
+}
+
+
+/* =========================
+   WELCOME CONTENT
+========================= */
+
+/* =========================
+   WELCOME CONTENT
+========================= */
+
+.about-content {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+
+    padding-top: 600px;
+    padding-bottom: 10px;
+
+    text-align: center;
+}
+
+
+/* Welcome */
+
+.about-content h1 {
+    font-family: Georgia, serif;
+    font-size: 90px;
+    font-weight: normal;
+    color: #111;
+    line-height: 1;
+
+    margin: 0 0 10px;
+}
+
+
+/* Cakes With Love */
+
+.about-content h2 {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    font-weight: normal;
+    color: #222;
+
+    margin: 0 0 25px;
+}
+
+
+/* Big Text */
+
+.about-content h4 {
+    font-family: Georgia, serif;
+    font-size: 35px;
+    font-weight: normal;
+    line-height: 1.3;
+
+    max-width: 650px;
+    color: #111;
+
+    margin: 0 auto 20px;
+}
+
+
+/* Paragraph */
+
+.about-content p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #6b7280;
+
+    max-width: 750px;
+    margin: 0 auto 25px;
+}
+
+
+/* Button */
+
+.read-more {
+    display: inline-block;
+
+    padding: 12px 28px;
+
+    background-color: #d95c5c;
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+
+    transition: 0.3s;
+}
+
+.read-more:hover {
+    background-color: #c14848;
+    color: #fff;
+}
+
+
+/* =========================
+   OUR CAKES
+========================= */
+
+/*.our-cakes {
+    position: relative;
+
+    margin-top: 0;
+    padding: 110px 0 60px;
+
+    text-align: center;
+
+    background-image: url("bg-03-free-img.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+
+    overflow: hidden;
+
+    z-index: 5;
+}
+*/
+/* =========================
+   OUR CAKES
+========================= */
+
+.our-cakes {
+    position: relative;
+
+    margin-top: 0;
+    padding: 70px 0 60px;
+
+    text-align: center;
+
+    background-image: url("bg-03-free-img.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+    z-index: 5;
+}
+
+
+/* HORIZONTAL LINE REMOVE */
+
+.our-cakes::before {
+    display: none !important;
+}
+
+
+/* CONTENT */
+
+.our-cakes .container {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* HEADING */
+
+.our-cakes h1 {
+    position: relative;
+    z-index: 2;
+
+    font-family: Georgia, serif;
+    font-size: 95px;
+    font-weight: normal;
+
+    color: #000;
+
+    margin: 0 0 15px;
+}
+
+
+/* SUBTITLE */
+
+.our-cakes p {
+    position: relative;
+    z-index: 2;
+
+    font-family: Georgia, serif;
+    font-size: 22px;
+
+    color: #000;
+
+    margin-bottom: 45px;
+}
+
+/* =========================
+   CAKE CARD
+========================= */
+
+.cake-card {
+    background-color: #f8f9ff;
+
+    height: 400px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    /* Basket icon ke liye */
+    position: relative;
+}
+
+.cake-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/* =========================
+   IMAGE CART BUTTON
+========================= */
+
+.image-cart-btn {
+    position: absolute;
+
+    top: 15px;
+    right: 15px;
+
+    width: 50px;
+    height: 50px;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: #ffffff;
+    color: #d93838;
+
+    font-size: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.3s ease;
+
+    z-index: 10;
+}
+
+
+/* Cake image/card par hover */
+
+.cake-card:hover .image-cart-btn {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* Basket icon par hover */
+
+.image-cart-btn:hover {
+    background-color: #d93838;
+    color: #ffffff;
+
+    transform: scale(1.1);
+}
+
+
+/* =========================
+   PRICE
+========================= */
+
+.cake-price {
+    color: #dc3545;
+
+    font-family: Georgia, serif;
+    font-size: 25px;
+
+    margin-top: 35px;
+}
+
+
+/* =========================
+   CAKE NAME
+========================= */
+
+.our-cakes h2 {
+    font-family: Georgia, serif;
+
+    font-size: 50px;
+    font-weight: normal;
+
+    color: #000;
+
+    margin-top: 15px;
+}
+
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.our-cakes .col-md-4 > p {
+    font-size: 17px;
+    color: #555;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .our-cakes {
+        margin-top: 0;
+        padding: 60px 0 80px;
+    }
+
+    .our-cakes::before {
+        top: 330px;
+    }
+
+    .our-cakes > h1 {
+        font-size: 55px;
+    }
+
+    .our-cakes > p {
+        font-size: 20px;
+    }
+
+    .cake-card {
+        height: 350px;
+        margin-bottom: 30px;
+    }
+
+    .our-cakes h2 {
+        font-size: 40px;
+    }
+}
+
+
+/* =========================
+   SINGLE TESTIMONIAL
+========================= */
+
+.testimonial-single-section {
+    background-color: #e9edfa;
+    padding: 80px 20px;
+}
+
+.testimonial-avatar {
+    width: 110px;
+    height: 110px;
+
+    object-fit: cover;
+    border-radius: 50%;
+
+    margin-bottom: 20px;
+}
+
+.testimonial-name {
+    font-family: 'Georgia', serif;
+    font-size: 28px;
+
+    color: #1a1a2e;
+
+    margin-bottom: 10px;
+}
+
+.quote-icon {
+    color: #ff5a5f;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1;
+
+    margin-bottom: 15px;
+}
+
+.testimonial-quote {
+    max-width: 700px;
+    margin: 0 auto;
+
+    color: #6b7280;
+
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer-section {
+    background-color: #ffffff;
+
+    padding: 80px 20px 40px;
+
+    border-top: 1px solid #eee;
+}
+
+.footer-logo-main {
+    font-family: 'Georgia', serif;
+
+    font-size: 32px;
+    font-weight: bold;
+
+    color: #1a1a2e;
+}
+
+.footer-logo-main em {
+    font-style: italic;
+}
+
+.footer-logo small {
+    letter-spacing: 2px;
+
+    color: #999;
+    font-size: 12px;
+}
+
+.footer-heading {
+    font-family: 'Georgia', serif;
+
+    font-size: 30px;
+    color: #1a1a2e;
+
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.footer-text {
+    color: #6b7280;
+
+    max-width: 500px;
+
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.footer-phone {
+    font-family: 'Georgia', serif;
+
+    font-size: 48px;
+
+    color: #1a1a2e;
+
+    margin-bottom: 10px;
+}
+
+.footer-contact {
+    color: #333;
+
+    font-family: 'Georgia', serif;
+
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.footer-socials {
+    margin-top: 15px;
+}
+
+.footer-socials a {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+
+    border: 1px solid #ff5a5f;
+
+    color: #ff5a5f;
+
+    margin-left: 10px;
+
+    font-size: 18px;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.footer-socials a:hover {
+    background-color: #ff5a5f;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+
+    .footer-section .text-md-end {
+        text-align: left !important;
+        margin-top: 30px;
+    }
+
+    .footer-socials a {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+}
+
+
+/* =========================
+   ABOUT HERO SECTION
+========================= */
+
+.about-hero-section {
+    background-color: #eef2fc;
+    padding: 100px 40px 60px;
+}
+
+.about-hero-title {
+    font-family: Georgia, serif;
+
+    font-size: 90px;
+    font-weight: normal;
+
+    color: #000;
+
+    margin: 0 0 60px;
+
+    text-align: left;
+}
+
+.about-divider {
+    border: none;
+
+    border-top: 1px solid #333;
+
+    margin: 0 0 50px;
+}
+
+.about-hero-sub {
+    font-family: Georgia, serif;
+
+    font-size: 18px;
+    color: #555;
+
+    margin: 0 0 15px;
+
+    text-align: left;
+}
+
+.about-hero-heading {
+    font-family: Georgia, serif;
+
+    font-size: 65px;
+    font-weight: normal;
+
+    color: #111;
+
+    line-height: 1.2;
+
+    margin: 0 0 60px;
+
+    text-align: left;
+}
+
+.about-content-row {
+    align-items: flex-start;
+}
+
+.about-hero-text {
+    font-size: 16px;
+
+    line-height: 1.9;
+
+    color: #6b7280;
+
+    text-align: left;
+}
+
+.about-hero-img {
+    width: 100%;
+    height: 30%;
+
+    display: block;
+
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+
+    .about-hero-heading {
+        font-size: 40px;
+    }
+
+    .about-hero-img {
+        margin-top: 30px;
+    }
+}
+
+
+/* =========================
+   FEATURES SECTION
+========================= */
+
+.about-features-section {
+    background-color: #eef2fc;
+
+    padding: 60px 40px 100px;
+}
+
+.feature-col {
+    text-align: center;
+
+    padding: 0 30px;
+}
+
+.feature-line {
+    border: none;
+
+    border-top: 1px solid #ccc;
+
+    max-width: 60px;
+
+    margin: 0 auto 40px;
+}
+
+.feature-icon {
+    width: 100px;
+    height: auto;
+
+    margin: 0 auto 30px;
+
+    display: block;
+}
+
+.feature-label {
+    font-family: Georgia, serif;
+
+    font-style: italic;
+
+    font-size: 16px;
+
+    color: #d95c5c;
+
+    margin-bottom: 12px;
+}
+
+.feature-title {
+    font-family: Georgia, serif;
+
+    font-size: 75px;
+    font-weight: normal;
+
+    color: #000;
+
+    margin: 0 0 25px;
+
+    line-height: 1;
+}
+
+.feature-text {
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    color: #6b7280;
+
+    max-width: 340px;
+
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+
+    .feature-col {
+        margin-bottom: 60px;
+    }
+
+    .feature-title {
+        font-size: 55px;
+    }
+}
+
+
+/* =========================
+   CAKES PAGE
+========================= */
+
+.cakes-page {
+    background-color: #eef2fc;
+
+    padding: 80px 0;
+}
+
+
+/* Heading */
+
+.cakes-page-title {
+    font-family: Georgia, serif;
+
+    font-size: 80px;
+    font-weight: normal;
+
+    text-align: left;
+
+    color: #000;
+
+    margin-bottom: 15px;
+}
+
+
+/* Subtitle */
+
+.cakes-page-subtitle {
+    font-family: Georgia, serif;
+
+    font-size: 24px;
+
+    text-align: left;
+
+    color: #555;
+
+    margin-bottom: 60px;
+}
+
+
+/* Cake Card */
+
+.cakes-page .cake-card {
+    background-color: #f8f8f8;
+
+    height: 350px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    /* Basket icon ko card ke andar rakhega */
+    position: relative;
+}
+
+.cakes-page .cake-card img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+/* Price */
+
+.cakes-page .cake-price {
+    color: #dc3545;
+
+    font-family: Georgia, serif;
+
+    font-size: 24px;
+
+    margin-top: 25px;
+}
+
+
+/* Cake Name */
+
+.cakes-page h2 {
+    font-family: Georgia, serif;
+
+    font-size: 38px;
+
+    font-weight: normal;
+
+    color: #000;
+
+    margin-top: 10px;
+}
+
+
+/* Description */
+
+.cakes-page .col-md-4 > p {
+    color: #555;
+
+    font-size: 16px;
+}
+
+
+/* =========================
+   OLD ADD TO CART BUTTON
+========================= */
+
+/*
+   Normal Add to Cart button ab use nahi ho raha.
+   Isliye cakes page ke old button ki styling hata di.
+*/
+
+.cakes-page .btn {
+    margin-top: 0;
+}
+
+
+/* =========================
+   TESTIMONIALS PAGE
+========================= */
+
+.testimonials-page {
+    background-color: #eef2fc;
+
+    padding: 80px 0 100px;
+
+    min-height: 100vh;
+}
+
+
+/* Heading */
+
+.testimonials-title {
+    font-family: Georgia, serif;
+
+    font-size: 80px;
+
+    font-weight: normal;
+
+    text-align: left;
+
+    color: #111;
+
+    margin-top: 30px;
+
+    margin-bottom: 100px;
+}
+
+
+/* Card Container */
+
+.testimonial-card {
+    border-top: 1px solid #d0d7ea;
+
+    padding-top: 35px;
+
+    text-align: left;
+}
+
+
+/* Paragraph Text */
+
+.testimonial-text {
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    color: #555555;
+
+    margin-bottom: 25px;
+
+    max-width: 500px;
+}
+
+
+/* Author Row */
+
+.testimonial-author {
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+/* Customer Image */
+
+.testimonial-author img {
+    width: 85px;
+    height: 85px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+
+
+/* Name */
+
+.author-info h4 {
+    font-family: Georgia, serif;
+
+    font-size: 22px;
+
+    font-weight: normal;
+
+    color: #111111;
+
+    margin: 0 0 4px 0;
+}
+
+
+/* Location */
+
+.author-info span {
+    font-size: 14px;
+
+    color: #e56a54;
+
+    display: block;
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .testimonials-page {
+        padding: 40px 15px;
+    }
+
+    .testimonials-title {
+        font-size: 45px;
+
+        margin-bottom: 40px;
+    }
+
+    .testimonial-card {
+        padding-top: 25px;
+    }
+
+    .testimonial-author img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .testimonial-text {
+        font-size: 15px;
+    }
+}
+
+
+/* =========================
+   CONTACT PAGE
+========================= */
+
+body {
+    background-color: #ebf1f9;
+
+    font-family: Arial, sans-serif;
+
+    color: #2b2b2b;
+
+    margin: 0;
+    padding: 0;
+
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   CONTACT CONTENT BACKGROUND
+========================= */
+
+.title-wrap,
+.section-divider,
+.message-section {
+    position: relative;
+
+    z-index: 1;
+}
+
+body:has(.title-wrap) {
+    background-color: #eef2fc;
+}
+
+
+/* =========================
+   CONTACT TITLE
+========================= */
+
+.title-wrap {
+    width: 90%;
+
+    max-width: 1080px;
+
+    margin: 50px auto 20px;
+}
+
+.page-title {
+    font-family: Georgia, serif;
+
+    font-size: 90px;
+
+    font-weight: normal;
+
+    color: #000;
+
+    margin: 0;
+
+    line-height: 0.9;
+}
+
+
+/* =========================
+   DIVIDER
+========================= */
+
+.section-divider {
+    width: 90%;
+
+    max-width: 1080px;
+
+    margin: 45px auto;
+
+    border: 0;
+
+    border-top: 1px solid #d4ddf0;
+
+    opacity: 1;
+}
+
+
+/* =========================
+   MESSAGE SECTION
+========================= */
+
+.message-section {
+    width: 90%;
+
+    max-width: 1080px;
+
+    margin: 0 auto;
+}
+
+
+/* Left heading */
+
+.message-title {
+    font-family: Georgia, serif;
+
+    font-size: 72px;
+
+    font-weight: normal;
+
+    color: #000;
+
+    line-height: 1;
+
+    margin-bottom: 20px;
+}
+
+
+/* Left paragraph */
+
+.message-subtext {
+    color: #555;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    max-width: 320px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.custom-form {
+    max-width: 550px;
+}
+
+.form-label {
+    font-size: 13px;
+
+    color: #444;
+
+    margin-bottom: 5px;
+
+    font-weight: 500;
+}
+
+.form-label .req {
+    color: #d93838;
+}
+
+.form-control {
+    border: 1px solid #c8d3e6;
+
+    border-radius: 4px;
+
+    background-color: #f1f5fb;
+
+    padding: 10px 12px;
+
+    font-size: 14px;
+
+    color: #333;
+
+    width: 100%;
+}
+
+.form-control:focus {
+    background-color: #f1f5fb;
+
+    border-color: #99afcf;
+
+    box-shadow: none;
+}
+
+
+/* =========================
+   SEND BUTTON
+========================= */
+
+.btn-send {
+    background-color: #d93838;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 4px;
+
+    padding: 10px 24px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    margin-top: 10px;
+}
+
+.btn-send:hover {
+    background-color: #bc2b2b;
+}
+
+
+/* =========================
+   REMOVE EXTRA SPACE
+========================= */
+
+.message-section + .section-divider {
+    margin-top: 60px;
+
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .title-wrap {
+        margin-top: 40px;
+    }
+
+    .page-title {
+        font-size: 65px;
+    }
+
+    .message-title {
+        font-size: 50px;
+    }
+
+    .message-section {
+        width: 90%;
+    }
+
+    .section-divider {
+        width: 90%;
+
+        margin: 35px auto;
+    }
+}
+
+
+/* =========================
+   CONTACT INFO SECTION
+========================= */
+
+.contact-info {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 35px;
+
+    margin: 80px auto 0 auto;
+
+    max-width: 1020px;
+
+    padding-top: 0;
+
+    width: 100%;
+}
+
+
+/* Har column ke upar border */
+
+.contact-col {
+    border-top: 1px solid #d3dbf0;
+
+    padding-top: 28px;
+
+    text-align: left;
+}
+
+
+/* Red Label */
+
+.contact-info small {
+    display: block;
+
+    font-size: 14px;
+
+    color: #dc3d3d;
+
+    margin-bottom: 12px;
+
+    font-weight: normal;
+}
+
+
+/* Detail Text */
+
+.contact-info h5 {
+    font-family: Georgia, serif;
+
+    font-size: 20px;
+
+    font-weight: normal;
+
+    color: #111;
+
+    line-height: 1.45;
+
+    margin: 0;
+}
+
+
+/* Circular Social Buttons */
+
+.contact-social {
+    display: flex;
+
+    gap: 10px;
+
+    align-items: center;
+}
+
+.contact-social a {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 38px;
+    height: 38px;
+
+    background-color: #dc3d3d;
+
+    color: #ffffff;
+
+    border-radius: 50%;
+
+    font-size: 16px;
+
+    text-decoration: none;
+
+    transition: background-color 0.2s ease;
+}
+
+.contact-social a:hover {
+    background-color: #b82e2e;
+}
+
+
+/* Mobile Alignment */
+
+@media (max-width: 768px) {
+
+    .contact-info {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+        max-width: 100%;
+    }
+}
+
+
+/* =========================
+   MAP SECTION
+========================= */
+
+.map-container {
+    max-width: 1020px;
+
+    margin: 60px auto 0 auto;
+
+    width: 100%;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+
+    border-radius: 4px;
+
+    overflow: hidden;
+
+    padding-bottom: 30px;
+}
+
+.map-container iframe {
+    width: 100%;
+
+    height: 450px;
+
+    display: block;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .map-container {
+        margin-top: 40px;
+
+        max-width: 100%;
+    }
+
+    .map-container iframe {
+        height: 300px;
+    }
+}
+
+
+/* =========================
+   FINAL CAKE CART FIX
+========================= */
+
+/* 
+   Ye rule ensure karega ki kisi old
+   #cakeList button CSS ki wajah se
+   basket icon par margin/padding apply na ho.
+*/
+
+#cakeList .image-cart-btn {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+/* =========================
+   MOBILE CART ICON
+========================= */
+
+@media (max-width: 768px) {
+
+    .image-cart-btn {
+        width: 45px;
+        height: 45px;
+
+        top: 10px;
+        right: 10px;
+
+        font-size: 20px;
+    }
+}
+
+/* ===============================
+   CAKES - ALL SAME ALIGNMENT
+=============================== */
+
+#cakeList {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+
+/* Each cake column */
+#cakeList > div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+/* All images same size */
+#cakeList .cake-card {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Price same position */
+#cakeList .cake-price {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Cake name same height */
+#cakeList h2 {
+    font-size: 35px;
+    line-height: 1.2;
+    height: 60px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Description same height */
+#cakeList p {
+    font-size: 17px;
+    line-height: 1.5;
+    height: 55px;
+    margin-top: 15px;
+    margin-bottom: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
